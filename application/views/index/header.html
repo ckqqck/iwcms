@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Title -->
+    <title>AZcms 响应式系统</title>
+
+    <!-- Favicon Ico -->
+    <link rel="shortcut icon" href="<?php echo base_url();?>static/index/images/favicon.ico">
+
+    <!-- =============================
+                stylesheets
+    ================================== -->
+
+    <!-- Normalize And Bootstrap -->
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/normalize.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/bootstrap.min.css">
+
+    <!-- Google Font  -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/font-awesome/css/font-awesome.min.css" />
+
+    <!-- Plugin Default Stylesheets -->
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/slider-pro.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/owl.carousel.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/owl.theme.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/owl.transitions.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/animate.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/responsive.css" />
+    <link rel="stylesheet" href="<?php echo base_url();?>static/index/css/color.css" id="colors" />
+
+    <!--[if lt IE 9]>
+        <script src="<?php echo base_url();?>static/index/js/html5shiv.min.js"></script>
+        <script src="<?php echo base_url();?>static/index/js/respond.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/index/js/selectivizr.js"></script>
+    <![endif]-->
+     <!-- NAVBAR
+    ================================================== -->
+    <style>
+        /* use navbar-wrapper to wrap navigation bar, the purpose is to overlay navigation bar above slider */
+        .navbar-wrapper {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 51px;
+        }
+        .navbar-wrapper > .container {
+            padding: 0;
+        }
+
+        @media all and (max-width: 768px ){
+            .navbar-wrapper {
+                position: relative;
+                top: 0px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+
+    <!-- =============================
+                    Header
+    ================================== -->
+    <header>
+        <!-- Navigation Menu start-->
+        <nav class="navbar blete-main-menu" role="navigation">
+            <div class="container">
+
+                <!-- Navbar Toggle -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="<?php echo base_url();?>company/index"><img class="logo" id="logo" src="<?php echo base_url();?>static/index/images/logo.png" alt="logo"></a>
+
+                </div>
+                <!-- Navbar Toggle End -->
+
+                <!-- navbar-collapse start-->
+                <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="<?php echo base_url();?>company/index">首页</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url();?>company/portfolio">下载</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url();?>company/portfolio2">产品</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url();?>company/pricing_table">论坛</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url();?>company/progress">云服务器</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url();?>company/contact">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url();?>">登录</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse end-->
+
+            </div>
+        </nav>
+        <!-- Navigation Menu end-->
+    </header>
+    <!-- Header End -->

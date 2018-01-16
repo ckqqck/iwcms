@@ -1,0 +1,50 @@
+.slideblock {
+    position: relative;
+}
+.slideshow {
+    clear: both;
+}
+.slideshow li {
+    overflow: hidden;
+    position: relative;
+}
+.slideshow span.title {
+    bottom: 0;
+    font-size: 14px;
+    height: 32px;
+    left: 0;
+    line-height: 32px;
+    margin-bottom: 0;
+    position: absolute;
+    text-indent: 10px;
+    width: 100%;
+}
+
+.slideshow span.title,.slidebar li {
+	background: rgba(0, 0, 0, 0.3);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  #30000000,
+		endColorstr=  #30000000);
+	color: #FFF;
+	overflow: hidden;
+}
+
+.slidebar li {
+	float: left;
+	margin-right: 1px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.slidebar li.on {
+	background: rgba(255, 255, 255, 0.5);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  #50FFFFFF,
+		endColorstr=  #50FFFFFF);
+	color: #000;
+	font-weight: 700;
+}
+
+

@@ -1,0 +1,115 @@
+.px,.pt,.ps,select {
+	border: 1px solid;
+}
+
+.er {
+	border-color: #F66 #FFBDB9 #FFBDB9 #F66;
+	background-color: #FDF4F4;
+	background-image: url(../image/px_e.png);
+}
+
+.rfm {
+	margin: 0 auto;
+	width: 560px;
+	border-bottom: 1px dotted #CDCDCD;
+}
+
+.rfm a {
+	color: #369;
+}
+
+.rq {
+	color: red;
+}
+
+.rfm th,.rfm td {
+	padding: 10px 2px;
+	vertical-align: top;
+	line-height: 24px;
+}
+
+.rfm .tipwide {
+	padding-top: 0;
+}
+
+.rfm th {
+	padding-right: 10px;
+	width: 10em;
+	text-align: right;
+}
+
+.rfm .px {
+	width: 220px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.rfm .px:focus {
+	border-color: #369;
+	background: #FFF;
+}
+
+.rfm .p_tip {
+	position: absolute;
+	z-index: 2;
+	display: none;
+	padding-left: 10px;
+	width: 390px;
+	background: #FFF;
+	color: #666;
+	font-style: normal;
+}
+
+.rfm .p_chk {
+	position: absolute;
+	z-index: 1;
+	padding-left: 10px;
+	width: 390px;
+	color: red;
+	font-weight: 700;
+	font-family: Tahoma, Helvetica, 'SimSun', sans-serif;
+}
+
+.rfm #emailmore {
+	position: absolute;
+}
+img {
+	position: relative;
+	top:8px
+}
+.p_right {
+	background: url(../image/reactor-bullet.gif) no-repeat 10px 12px;
+	width: 30px;
+}
+
+.pn {
+	vertical-align: middle;
+	overflow: hidden;
+	padding: 0;
+	height: 23px;
+	border: 1px solid #999;
+	background: #E5E5E5 url(../image/pn.png) repeat-x 0 0;
+	cursor: pointer;
+	-moz-box-shadow: 0 1px 0 #E5E5E5;
+	-webkit-box-shadow: 0 1px 0 #E5E5E5;
+	box-shadow: 0 1px 0 #E5E5E5;
+}
+
+.pn em,.pn strong {
+	font-weight: 700;
+}
+
+.pn em,.pn span,.pn strong {
+	padding: 0 10px;
+	line-height: 21px;
+}
+
+h1 {
+	border-bottom: 1px solid #ccc;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom: 2px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}

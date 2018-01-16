@@ -1,0 +1,69 @@
+<br>
+<br>
+<br>
+<link rel="stylesheet" href="<?php echo base_url();?>static/common/bootstraptable/bootstrap-table.css">
+<script src="<?php echo base_url();?>static/common/bootstraptable/bootstrap-table.js"></script>
+<script src="<?php echo base_url();?>static/common/bootstraptable/bootstrap-table-contextmenu.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="<?php echo base_url();?>static/common/bootstraptable/bootstrap-table-zh-CN.js"></script>
+  <div class="container">
+      <div class="row">
+		        <a href="<?php echo base_url();?>index.php/bootstraptable/json">json</a>
+		<div class="fixed-table-toolbar"></div>
+  		<table id="table" data-query-params="queryParams"></table>
+	   <!-- context menu -->
+			    <ul id="example2-context-menu" class="dropdown-menu">
+				    <li data-item="edit"><a>Edit</a></li>
+				    <li data-item="delete"><a>Delete</a></li>
+				    <li data-item="action1"><a>Action Here</a></li>
+				    <li data-item="action2"><a>And Action Here</a></li>
+				</ul>
+      </div>  
+    </div>
+<script type="text/javascript">
+ /*
+ * data-click-to-select 设置行点击是否选中
+ * data-select-item-name 设置选中项的值
+ * data-radio 设置列是否显示为radio单选框
+ * click-row.bs.table 绑定行点击事件
+ * getData 获取指定索引的行数据对象
+ */
+ var $table= $('#table').bootstrapTable({
+	 rowStyle: "rowStyle",
+     columns: [
+         { field: 'user_id', title: '学生编号'},
+         { field: 'user_name', title: '学生姓名' },
+         { field: 'user_tel', title: '联系电话' },
+         { field: 'user_regtime', title: '注册时间' },
+         { field: 'actions', title: 'Actions' },
+     ],
+     url:'<?php echo base_url();?>index.php/demo/bootstraptable_json',
+     pagination: true, //分页
+     search:true,
+     searchOnEnterKey: true, 
+     pageList: [20, 50, 100, 150],
+     sidePagination: "server",
+     contextMenu: '#example2-context-menu',
+     contextMenuButton: '.example2-button',
+     onContextMenuItem: function(row, $el){
+         if($el.data("item") == "edit"){
+             alert("Edit: " + row.user_id + ' ' + row.user_name + ' ' + row.user_tel);
+         } else if($el.data("item") == "delete"){
+             alert("Delete: " + row.user_id + ' ' + row.user_name + ' ' + row.user_tel);
+         } else if($el.data("item") == "action1"){
+             alert("Action1: " + row.user_id + ' ' + row.user_name + ' ' + row.user_tel);
+         } else if($el.data("item") == "action2"){
+             alert("Action2: " + row.user_id + ' ' + row.user_name + ' ' + row.user_tel);
+         }
+     }
+ });
+ </script>
+ <script>
+    function queryParams(params) {
+        return params;
+    }
+
+    function postQueryParams(params) {
+        return params; // body data
+    }
+</script>

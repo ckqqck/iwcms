@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>azcms--登录页面</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Novus Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- Bootstrap Core CSS -->
+<link href="<?php echo base_url(); ?>static/admin/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="<?php echo base_url(); ?>static/admin/css/style.css" rel='stylesheet' type='text/css' />
+</head> 
+<body>
+		<!-- main content start-->
+		<div id="page-wrapper">
+			<div class="main-page login-page ">
+				<h3 class="title1">登录页面</h3>
+				<div class="widget-shadow">
+					<div class="login-top">
+						<h4>欢迎来到后台管理网站 ! <br> 不是会员? <a href="signup.html">  注册 »</a> </h4>
+					</div>
+					<div class="login-body">
+						<form action="<?php echo base_url(); ?>loginMe" method="post">
+							<input type="text" class="user" name="email" placeholder="Enter your email" required="" value="admin@codeinsect.com">
+							<input type="password" name="password" class="lock" placeholder="password" value="codeinsect">
+							<input type="submit" name="登录" value="登  录">
+							<div class="forgot-grid">
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>记住</label>
+								<div class="forgot">
+									<a href="#">忘记密码?</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="login-page-bottom">
+					<h5> - OR -</h5>
+					<div class="social-btn"><a href="#"><i class="fa fa-facebook"></i><i>微信登录</i></a></div>
+					<div class="social-btn sb-two"><a href="#"><i class="fa fa-twitter"></i><i>QQ登录</i></a></div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,746 @@
+﻿    <div style="min-height: 50px;">
+        <!-- Jssor Slider Begin -->
+        <style>
+            /* jssor slider loading skin spin css */
+            .jssorl-009-spin img {
+                animation-name: jssorl-009-spin;
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes jssorl-009-spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="<?php echo base_url();?>static/common/jssor/svg/loading/static-svg/spin.svg" />
+            </div>
+
+            <!-- Slides Container -->
+            <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                <div>
+                    <img data-u="image" src="<?php echo base_url();?>static/common/jssor/img/gallery/1300x500/001.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="<?php echo base_url();?>static/common/jssor/img/gallery/1300x500/002.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="<?php echo base_url();?>static/common/jssor/img/gallery/1300x500/003.jpg" />
+                </div>
+            </div>
+            
+            <!--#region Bullet Navigator Skin Begin -->
+            <!-- Help: https://www.jssor.com/development/slider-with-bullet-navigator.html -->
+            <style>
+                .jssorb031 {position:absolute;}
+                .jssorb031 .i {position:absolute;cursor:pointer;}
+                .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+                .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+                .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+                .jssorb031 .i.idn {opacity:.3;}
+            </style>
+            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+        
+            <!--#region Arrow Navigator Skin Begin -->
+            <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+            <style>
+                .jssora051 {display:block;position:absolute;cursor:pointer;}
+                .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+                .jssora051:hover {opacity:.8;}
+                .jssora051.jssora051dn {opacity:.5;}
+                .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+            </style>
+            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div>
+            <!--#endregion Arrow Navigator Skin End -->
+        </div>
+        <!-- Jssor Slider End -->
+    </div>
+
+<section id="about" class="blete-section-wrapper">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section Header -->
+			<div
+				class="col-md-12 col-sm-12 col-xs-12 blete-section-header wow fadeInDown"
+				style="visibility: visible; animation-name: fadeInDown;">
+				<h2>
+					ABOUT <span class="blete-highlight-text">SERVICE</span>
+				</h2>
+				<div class="blete-section-divider"></div>
+				<p
+					class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem
+					ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+					veniam, rerum provident repudiandae, ducimus beatae voluptatem
+					ullam delectus eum excepturi quaerat, molestias accusamus.
+					Repellendus, laboriosam recusandae! Illo quod voluptates corrupti!</p>
+			</div>
+			<!-- Section Header End -->
+
+			<!-- What We Do -->
+			<div class="blete-what-we-do">
+
+				<div
+					class="col-md-3 col-sm-3 col-xs-12 blete-blurb-round-icon wow bounceInLeft"
+					style="visibility: visible; animation-name: bounceInLeft;">
+					<div class="blete-icon">
+						<i class="fa fa-key"></i>
+					</div>
+					<h3>WEB SECURITY</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Libero praesentium quam nulla, porro nemo.</p>
+				</div>
+
+				<div
+					class="col-md-3 col-sm-3 col-xs-12 blete-blurb-round-icon wow bounceInLeft"
+					data-wow-delay=".5s"
+					style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInLeft;">
+					<div class="blete-icon">
+						<i class="fa fa-laptop"></i>
+					</div>
+					<h3>WEB RESPONSIVE</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Repellat hic facilis dolores nam.</p>
+				</div>
+
+				<div
+					class="col-md-3 col-sm-3 col-xs-12 blete-blurb-round-icon wow bounceInRight"
+					data-wow-delay=".5s"
+					style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+					<div class="blete-icon">
+						<i class="fa fa-search"></i>
+					</div>
+					<h3>SEO OPTIMATION</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Repudiandae illo nesciunt quas perferendis.</p>
+				</div>
+
+				<div
+					class="col-md-3 col-sm-3 col-xs-12 blete-blurb-round-icon wow bounceInRight"
+					data-wow-delay=".5s"
+					style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+					<div class="blete-icon">
+						<i class="fa fa-html5"></i>
+					</div>
+					<h3>HTML5 TEMPLATE</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Quae, sit, voluptate! Debitis sint ipsum ea aliquid.</p>
+				</div>
+
+			</div>
+			<!-- What We Do End -->
+
+		</div>
+	</div>
+</section>
+
+<section id="we" class="blete-section-wrapper">
+	<div class="container">
+		<div class="row">
+			<!-- What We Do -->
+			<div class="blete-what-we-do">
+				<div
+					class="col-md-4 col-sm-4 col-xs-12 blete-blurb-round-icon wow bounceInLeft"
+					style="visibility: visible; animation-name: bounceInLeft;">
+					<div class="blete-team-slides col-md-12 col-sm-12 col-xs-12">
+						<div class="blete-member-img-wrapper">
+							<img
+								src="http://127.0.0.1/btts_4_rq/images/img-team/team-img-2.png"
+								alt="Team Member 2">
+						</div>
+
+						<div class="blete-member-details">
+							<h3>Marthin Doe</h3>
+							<span class="blete-member-desg">Web Designer</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Quos dolorem repellendus animi veritatis iure odio laudantium,
+								molestiae. Recusandae quisquam sed laudantium et veritatis,
+								blanditiis ad fugiat aperiam quia tempora.</p>
+							<ul class="blete-team-social-icon">
+								<li class="social-facebook"><a href="#"><i
+										class="fa fa-qq"></i></a></li>
+								<li class="social-twitter"><a href="#"><i
+										class="fa fa-weixin"></i></a></li>
+								<li class="social-gplus"><a href="#"><i
+										class="fa fa-weibo"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="col-md-4 col-sm-4 col-xs-12 blete-blurb-round-icon wow bounceInLeft"
+					data-wow-delay=".5s"
+					style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInLeft;">
+					<div class="blete-team-slides col-md-12 col-sm-12 col-xs-12">
+						<div class="blete-member-img-wrapper">
+							<img
+								src="http://127.0.0.1/btts_4_rq/images/img-team/team-img-2.png"
+								alt="Team Member 2">
+						</div>
+
+						<div class="blete-member-details">
+							<h3>Marthin Doe</h3>
+							<span class="blete-member-desg">Web Designer</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Quos dolorem repellendus animi veritatis iure odio laudantium,
+								molestiae. Recusandae quisquam sed laudantium et veritatis,
+								blanditiis ad fugiat aperiam quia tempora.</p>
+							<ul class="blete-team-social-icon">
+								<li class="social-facebook"><a href="#"><i
+										class="fa fa-qq"></i></a></li>
+								<li class="social-twitter"><a href="#"><i
+										class="fa fa-weixin"></i></a></li>
+								<li class="social-gplus"><a href="#"><i
+										class="fa fa-weibo"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="col-md-4 col-sm-4 col-xs-12 blete-blurb-round-icon wow bounceInRight"
+					data-wow-delay=".5s"
+					style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+					<div class="blete-team-slides col-md-12 col-sm-12 col-xs-12">
+						<div class="blete-member-img-wrapper">
+							<img
+								src="http://127.0.0.1/btts_4_rq/images/img-team/team-img-2.png"
+								alt="Team Member 2">
+						</div>
+
+						<div class="blete-member-details">
+							<h3>Marthin Doe</h3>
+							<span class="blete-member-desg">Web Designer</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Quos dolorem repellendus animi veritatis iure odio laudantium,
+								molestiae. Recusandae quisquam sed laudantium et veritatis,
+								blanditiis ad fugiat aperiam quia tempora.</p>
+							<ul class="blete-team-social-icon">
+								<li class="social-facebook"><a href="#"><i
+										class="fa fa-qq"></i></a></li>
+								<li class="social-twitter"><a href="#"><i
+										class="fa fa-weixin"></i></a></li>
+								<li class="social-gplus"><a href="#"><i
+										class="fa fa-weibo"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- What We Do End -->
+
+		</div>
+	</div>
+</section>
+
+<section id="featured-works"
+	class="blete-section-wrapper blete-section-work">
+	<div class="container">
+		<h1>Bootstrap响应式图片展示模板</h1>
+		<hr>
+
+		<h2>
+			让图片显示不在重叠摆放
+			<p class="lead">
+				使用小网格结构
+				<code>.col-*</code>
+				grid classes
+			</p>
+		</h2>
+		<p>
+			显示方式<b>每行4张图片</b>. 使用img-responsive来控制响应式图片，并可以随着显示器的尺寸随之变化....
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+		</div>
+		<p>这个例子演示了基于百分比响应式的布局。</p>
+		<p>这里使用3个强大的网格来提高我们的设计...</p>
+		<br>
+		<br>
+		<hr>
+		<h2>
+			4-3-2 grid 示例
+			<p class="lead">共有3种尺寸</p>
+		</h2>
+		<p>大型设备（桌面PC）展示4个列，中型设备（平板）展示3个列，小型设备（手机）展示2个列.</p>
+		<div class="row">
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-3 col-sm-4 col-xs-6">
+				<a href="#" class="thumbnail"> <img
+					src="http://www.gbtags.com/gb/laitu/350x150" class="img-responsive">
+				</a>
+			</div>
+		</div>
+		<p>使用Bootstrap3的以上网格设计，我们可以组合出多种不同的布局效果</p>
+		<br>
+		<br>
+
+		<hr>
+
+		<h2>
+			6-4-3 grid 示例
+			<p class="lead">大型设备（桌面PC）展示6个列，中型设备（平板）展示4个列，小型设备（手机）展示3个列</p>
+		</h2>
+		<div class="row">
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-2 col-sm-3 col-xs-4">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/200x200"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+		</div>
+		<hr>
+		<br>
+		<br>
+
+
+		<h2>
+			3-2-1 grid 示例
+			<p class="lead">大型设备（桌面PC）展示3个列，中型设备（平板）展示2个列，小型设备（手机）展示1个列.</p>
+		</h2>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<a href="#"> <img src="http://www.gbtags.com/gb/laitu/800x600"
+					class="thumbnail img-responsive">
+				</a>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section id="pricing" class="blete-pricing-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="blete-pricing-wrapper">
+
+				<!-- Plans -->
+				<div
+					class="col-md-4 col-sm-4 col-xs-12 blete-pricing-plans wow bounceInLeft pricing-plan-one"
+					style="visibility: visible; animation-name: bounceInLeft;">
+					<div class="blete-pricing-titles">
+						<h2>Simple</h2>
+						<p>
+							<span>$50/</span>Month
+						</p>
+					</div>
+					<div class="blete-pricing-service-name">
+						<ul>
+							<li>Free Setup</li>
+							<li>Free Domain 1 Year</li>
+							<li>6 Sub Domain</li>
+							<li>Free 5 Theme</li>
+							<li>Free Support / Week</li>
+							<li>Free Update Theme</li>
+							<li>Free 5 PSD</li>
+						</ul>
+					</div>
+
+					<a href="#" class="blete-signup-btn">SIGN UP</a>
+				</div>
+				<!-- Plans End -->
+
+				<!-- Plans -->
+				<div
+					class="col-md-4 col-sm-4 col-xs-12 blete-pricing-plans blete-recommended-pricing wow fadeInUp"
+					data-wow-duration="1s"
+					style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+					<div class="blete-pricing-titles">
+						<h2>Standard</h2>
+						<p>
+							<span>$80/</span>Month
+						</p>
+					</div>
+					<div class="blete-pricing-service-name">
+						<ul>
+							<li>Free Setup</li>
+							<li>Free Domain 2 Year</li>
+							<li>12 Sub Domain</li>
+							<li>Free 10 Theme</li>
+							<li>24/7 Free Support</li>
+							<li>Free Update Theme</li>
+							<li>Free 10 PSD</li>
+						</ul>
+					</div>
+
+					<a href="#" class="blete-signup-btn">SIGN UP</a>
+				</div>
+				<!-- Plans End -->
+
+				<!-- Plans -->
+				<div
+					class="col-md-4 col-sm-4 col-xs-12 blete-pricing-plans wow bounceInRight"
+					style="visibility: visible; animation-name: bounceInRight;">
+					<div class="blete-pricing-titles">
+						<h2>Ultimate</h2>
+						<p>
+							<span>$150/</span>Month
+						</p>
+					</div>
+					<div class="blete-pricing-service-name">
+						<ul>
+							<li>Free Setup</li>
+							<li>Free Domain 4 Year</li>
+							<li>Unlimited Sub Domain</li>
+							<li>Unlimited Theme</li>
+							<li>24/7 Free Support</li>
+							<li>Free Update Theme</li>
+							<li>Unlimited PSD</li>
+						</ul>
+					</div>
+
+					<a href="#" class="blete-signup-btn">SIGN UP</a>
+				</div>
+				<!-- Plans End -->
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- jssor slider scripts-->
+<script type="text/javascript"
+	src="<?php echo base_url();?>static/common/jssor/js/jssor.slider.min.js"></script>
+<script>
+        jQuery(document).ready(function ($) {
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: 1,                                    //[Optional] Auto play or not, to enable slideshow, this option must be set to greater than 0. Default value is 0. 0: no auto play, 1: continuously, 2: stop at last slide, 4: stop on click, 8: stop on user navigation (by arrow/bullet/thumbnail/drag/arrow key navigation)
+                $Idle: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: 1,   			            //[Optional] Steps to go for each navigation request by pressing arrow key, default value is 1.
+                $SlideEasing: $Jease$.$OutQuint,          //[Optional] Specifies easing for right to left animation, default value is $Jease$.$OutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide, default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $Cols: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $Align: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+              
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Rows: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    
+
+<!-- Marketing messaging and featurettes ================================================== -->
+<!-- FOOTER -->
+<hr>
+
+<!-- =============================
+                Footer Section
+    ================================= -->
+<footer>
+	<div class="container blete-contact-section">
+		<div class="row">
+			<div class="col-md-3">
+				<h3>关于我们</h3>
+				<ul>
+					<li><span>采用标准的html及css规范，使您的设计便于维护及二次开发，通过导出功能，可输出干净的html文档结构及css样式表，便于后期添加个性化功能。采用标准的html及css规范，使您的设计便于维护及二次开发，通过导出功能，可输出干净的html文档结构及css样式表，便于后期添加个性化功能。</span></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h3>产品</h3>
+				<ul>
+					<li><a href="">azcms响应式内容管理系统</a></li>
+					<li><a href="">微信小程序</a></li>
+					<li><a href="">内容采集系统</a></li>
+					<li><a href="">微信涨粉系统</a></li>
+					<li><a href="">一元夺宝系统</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 blete-contact-address">
+				<h3>行业解决方案</h3>
+				<ul>
+					<li class="blete-office-address"><i class="fa fa-home"></i>4500
+						Lorem Ipsum<br>Dolor, IL 80237<br>Sit Amet</li>
+					<li class="blete-phone"><i class="fa fa-phone"></i>729-1431-12314</li>
+					<li class="blete-email"><i class="fa fa-envelope-o"></i>info@loremipsum.com</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h3>帮助支持</h3>
+				<ul>
+					<li><a href="">微信</a></li>
+					<li><a href="">QQ</a></li>
+					<li><a href="">电话</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</footer>

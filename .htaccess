@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on  
+	RewriteCond $1 !^(index\.php|phpinfo\.php|ty185|assets|test\.php|apicloud|weui-master|phpMyAdmin|zhifu|jssdk|html|images|cache|static|template|upload|robots\.txt)  
+	RewriteRule ^(.*)$ /index.php/$1 [L]
+</IfModule>
